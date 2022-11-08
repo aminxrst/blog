@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    direction: rtl;
+}
+
+@font-face {
+    font-family: Kalameh;
+    src: url('../../public/fonts/Kalameh.eot');
+    src: url('../../public/fonts/Kalameh.eot?#iefix') format('embedded-opentype'),
+        /*url('../../public/fonts/Vazir-Black.woff2') format('woff2'),*/
+        /*url('../../public/fonts/Vazir-Black.woff') format('woff'),*/
+    url('../../public/fonts/Kalameh.ttf') format('truetype');
+    font-weight: normal;
+}
