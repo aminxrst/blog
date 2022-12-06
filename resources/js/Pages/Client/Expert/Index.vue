@@ -5,7 +5,11 @@
 <script>
 import HeaderComponent from "@/Layouts/Header/HeaderComponent.vue";
 export default {
-name: "Home",
+    name: "Index",
     components: {HeaderComponent}
 }
 </script>
+
+<style scoped>
+
+</style>

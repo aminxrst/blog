@@ -18,7 +18,12 @@ module.exports = {
             boxShadow: {
                 'sky': '0px 7px 38px rgba(0, 184, 236, 0.55)',
                 'header': '0px 34px 129px rgba(0, 0, 0, 0.12)',
-            }
+
+            },
+            colors: {
+                'blurgreen': '#3ADBA5',
+                'blurgreen2': '#D5FCEF',
+            },
         },
     },
 

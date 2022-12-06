@@ -3,11 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="آنیوان مارکت فروشگاه اینترنتی اسباب بازی و بازی فکری انیوان مارکت کودک، نوجوان و بزرگسال لوازم تحریر فانتزی، کتاب روانشناسی، انگیزشی به همراه تخفیف ویژه، انیوان مارکت">
 
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
-
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Scripts -->
         @routes
