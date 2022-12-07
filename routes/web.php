@@ -34,8 +34,9 @@ Route::group(['prefix' => 'admin', 'name' => 'Admin', 'middleware' => 'auth:sanc
         Route::get('/', [AdminStudyController::class, 'index'])->name('admin.study');
         Route::get('addstudy', [AdminStudyController::class, 'addStudy'])->name('study.addstudy');
     });
-    Route::group(['prefix' => 'category', 'name' => 'Category'], function (){
+    Route::group(['prefix' => 'category', 'name' => 'Category', 'middleware' => 'XssSanitizer'], function (){
        Route::get('/', [CategoryController::class, 'index'])->name('admin.category');
        Route::get('addcategory', [CategoryController::class, 'addCategory'])->name('category.addcategory');
+       Route::post('create', [CategoryController::class, 'create'])->name('category.create');
     });
 });

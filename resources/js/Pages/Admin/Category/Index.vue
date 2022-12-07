@@ -10,6 +10,9 @@
             </div>
         </div>
 
+        <div v-if="$page.props.flash.message" class="bg-green-400">
+            <p>{{$page.props.flash.message}}</p>
+        </div>
         <div class="flex">
             <Link :href="route('category.addcategory')" class="bg-blue-400 rounded-md px-8 py-2 shadow-md flex items-center justify-center gap-4 hover:bg-blue-600">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-white">

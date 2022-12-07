@@ -15,3 +15,11 @@
     url('../../public/fonts/Kalameh.ttf') format('truetype');
     font-weight: normal;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
