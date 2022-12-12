@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AdminStudyController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Client\ExpertsController;
 use App\Http\Controllers\Client\StudyController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Foundation\Application;
@@ -40,3 +41,5 @@ Route::group(['prefix' => 'admin', 'name' => 'Admin', 'middleware' => 'auth:sanc
        Route::post('create', [CategoryController::class, 'create'])->name('category.create');
     });
 });
+
+Route::get('experts', [ExpertsController::class, 'index'])->name('experts');
