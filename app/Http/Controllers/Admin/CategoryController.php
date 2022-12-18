@@ -11,7 +11,8 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Admin/Category/Index');
+        $cats = Category::query()->where('parent', 0)->get();
+        return Inertia::render('Admin/Category/Index', compact('cats'));
     }
 
     public function addCategory()
@@ -23,6 +24,7 @@ class CategoryController extends Controller
 
     public function create(Request $request)
     {
+
         $request->validate([
             'parentValue' => 'required',
             'category' => 'required'

@@ -21,6 +21,9 @@
                 <p class="text-white">افزودن دسته بندی</p>
             </Link>
         </div>
+
+
+        <div v-for="(cat,index) in cats" :key="index">{{cat.title}}</div>
     </div>
 </template>
 
@@ -29,7 +32,13 @@ import {Link} from "@inertiajs/inertia-vue3";
 import AdminHeaderComponent from "@/Layouts/Admin/Header/AdminHeaderComponent.vue";
 export default {
     name: "Index",
-    components: {AdminHeaderComponent, Link}
+    components: {AdminHeaderComponent, Link},
+     props:{
+        cats : {
+            type : Array,
+            required : true
+        }
+     }
 }
 </script>
 
