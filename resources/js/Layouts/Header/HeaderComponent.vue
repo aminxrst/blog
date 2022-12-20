@@ -5,7 +5,7 @@
             <div class="flex w-[100px] h-[20px]">
                 <img class="object-cover" src="images/logo/logo.png" alt="لوگو">
             </div>
-            <div>
+            <div class="hidden lg:flex">
                 <ul class="flex justify-between gap-10">
                     <li class="text-base font-semibold text-[#2D2D2D]"><a class="focus:outline-none" :href="route('home')">صفحه اصلی</a></li>
                     <li class="text-base font-semibold text-[#2D2D2D]"><a class="focus:outline-none" href="#">درباره ما</a></li>

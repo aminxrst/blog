@@ -46,4 +46,15 @@ class CategoryController extends Controller
         Category::create($data);
         return redirect()->route('admin.category')->with(["message" => "با موفقیت افزوده شد"]);
     }
+
+    public function childCategory($id)
+    {
+        $parent = Category::findOrFail($id);
+        $children= Category::query()->where('parent', $id)->get();
+        $data = [
+            "children" => $children,
+            "parent" => $parent
+        ];
+        return Inertia::render("Admin/Category/ChildCategory", compact('data'));
+    }
 }
